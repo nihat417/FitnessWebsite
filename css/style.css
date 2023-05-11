@@ -1,27 +1,71 @@
-:root {
-    --yasil: #a1c927;
-    --qirmizi: #fd634d;
+:root{
+    --yasil:#a1c927;
+    --qirmizi:#fd634d;
 }
-header {
+
+.txtwhite{color: #fff;}
+.txtred{color: var(--qirmizi);}
+.txtgreen{color: var(--yasil);}
+
+.bgtwhite{background-color: #fff;}
+.bgred{background-color: var(--qirmizi);}
+.bggreen{background-color: var(--yasil);}
+
+header{
     background: url('../img/headerbg.jpg') center/cover;
     text-align: center;
     position: relative;
+    min-height: 100vh;
 }
-nav {
-    padding: 40px 50px;
+
+nav{
+    padding: 6vh 50px;
 }
-#menu { padding: 20px 0}
-#menu li a {
-    font: normal .8rem Avenir;
-    text-transform: uppercase;
+
+#menu{
+    padding: 2vh 0;
+}
+
+#menu li a{
+    font:normal 0.8rem,Avenir;
     color: #fff;
+    text-transform: uppercase;
 }
-#title {
+
+#title{
     position: absolute;
     width: 100%;
     left: 0;
     bottom: 15vh;
 }
+
+#title h1{
+    font: normal 2rem 'Myriad Pro';
+    text-transform: uppercase;
+}
+
+#title h5{
+    font: normal 1rem 'Myriad Pro';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.art { padding: 60px 20px}
+.art1{padding: 80px 40px;}
+.art2{padding: 40px 50px;}
+.art4 {padding: 80px 0;}
+.art4 article{ padding: 40px 20px;}
+
+.article2{
+    background: url('../img/fitnessfirst.jpg') center/cover;
+    min-height: 50vh;
+}
+
+.article3{
+    background: url('../img/yourbody.jpg') center/cover;
+    min-height: 50vh;
+}
+
 h1, h5 {
     font-family: 'Myriad Pro';
     text-transform: uppercase;
@@ -40,48 +84,93 @@ h4 {
     text-transform: uppercase;
 }
 
-.art4 { padding: 80px 0 }
-.art4 article { padding: 40px 20px}
-
-.art { padding: 60px 20px }
-
-.bgag { background-color: #fff }
-.bgyasil { background-color: var(--yasil) }
-.bgqirmizi { background-color: var(--qirmizi) }
-.txtag, .txtag a { color: #fff }
-.txtyasil { color: var(--yasil) }
-.txtqirmizi { color: var(--qirmizi) }
-.vh100 { min-height: 100vh }
-.vh50 { min-height: 50vh }
-
-
-.col25 i{
-    width: 55%;
+.div1 { 
+    background: url('../img/lifestyle.jpg') center/cover;
+    min-height: 50vh;
 }
 
+.div2{
+    background: url('../img/summeroffun.jpg') center/cover;
+    min-height: 50vh;
+}
 
+.div3{
+    background: url('../img/grape.jpg')center/cover;
+    min-height: 50vh;
+}
 
+.div4{
+    background: url('../img/mango.jpg')center/cover;
+    min-height: 50vh;
+}
 
-@media only screen and (min-width: 768px) {
+.div5{
+    background: url('../img/mainmenphoto.jpg')center/cover;
+    min-height: 100vh;
+}
+
+.container2{
+    text-align: center;
+}
+
+.container2 h1{
+    font: normal 2rem 'Open Sans';
+    color: #fff;
+    text-transform: initial;
+}
+
+.vh50{
+    min-height: 50vh;
+}
+
+footer {
+    background: #0c1119;
+    color: #fff;
+}
+
+.infosite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#icon a{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #aaa;
+    padding: 10px 0;
+}
+
+.fa-facebook:hover{color: darkblue!important}
+.fa-twitter:hover{ color: cornflowerblue!important}
+.fa-youtube:hover{color: red!important}
+.fa-linkedin:hover{color: skyblue!important}
+
+@media only screen and (min-width: 768px)
+{
+    header{ text-align: initial;}
+    #menu { float: right;}
+    #menu li { display: inline-block; padding: 0 0 0 3.75vw;}
+    #title { left: 117px; width: initial; text-align: right }
+    #title h1{font-size: 2.5rem;}
+    #title h5{ padding: 0 20px 0 0 }
     .container { max-width: 1180px; margin: auto }
-    header {
-        text-align: initial;
-    }
-    #menu { float: right}
-    #menu li { 
-        display: inline-block;
-        padding: 0 0 0 3.75vw;
-    }
+    .art4 article{ width: 25%; float: left;}
+    .row::after{content: '';display: table;clear: both;}
+    .articletxt{ width: 33.33%; float: left; min-height: 50vh; padding: 60px 20px }
+    .article2{ width: 66.66%; float: right;}
+    .article3{ width: 66.66%; float: left; }
+    .article5{width: 33.33%;float: left; }
+    .article6{width: 66.66%; float: right;}
+    .article7{width: 66.66%; float: left;}
+    .article8{width: 33.33%; float: right;}
+    .infosite{flex-direction: row;}
+    .container3{width: 40%;}
+    .container4{width: 20%;}
+
     h1 { font: 2.5rem }
     h2 { font: 2.2rem }
     h5 { padding: 0 20px 0 0 }
-    #title { left: 7.2vw; width: initial; text-align: right }
-    .col25 { width: 25% }
-    .col33 { width: 33.33% }
-    .col66 { width: 66.66% }
-    .fleft { float: left }
-    .fright { float: right }
-    .row:after { content: ''; display: table; clear: both;}
 
-    .art { padding: 60px }
+    
 }
